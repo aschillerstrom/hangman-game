@@ -31,7 +31,7 @@ function gameSetup(){
     lettersGuessed = [];
     wordInPlay = [];
 
-
+    
     document.getElementById("hangmanimage").src = "";
 
     //get word and put in dashes
@@ -45,7 +45,6 @@ function gameSetup(){
     document.getElementById("you-lose").style.cssText = "display: none";
     document.getElementById("winner").style.cssText = "display: none";
 
-
     
     updateGameScreen();
 };
@@ -58,6 +57,7 @@ function updateGameScreen() {
     for (var i = 0; i<wordInPlay.length; i++) {
         wordInPlayCharacters += wordInPlay[i];
     }
+
 
     document.getElementById("wordInPlay").innerText = wordInPlayCharacters;
     document.getElementById("triesLeft").innerText = triesLeft;
