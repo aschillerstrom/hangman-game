@@ -123,6 +123,7 @@ function replaceDash(letter) {
 
 
 document.onkeydown = function(event) {
+    updateHangmanImage();
     if (finished){
         gameSetup();
         finished = false;
