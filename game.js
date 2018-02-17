@@ -52,6 +52,7 @@ function gameSetup(){
 //update how the game looks to the user
 
 function updateGameScreen() {
+    updateHangmanImage();
     document.getElementById("totalWins").innerText = wins;
     var wordInPlayCharacters = "";
     for (var i = 0; i<wordInPlay.length; i++) {
